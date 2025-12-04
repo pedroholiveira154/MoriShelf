@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="_css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img height="200px" src="_img/logo.png" alt=""></a>
+            <div class="pesquisar">
+                <input onclick="pesquisar()" type="text" placeholder="🔍">
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="sobreNos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <!-------------------- Mais Vendidos ------------------>
+        <div class="titulo">
+            <h1>Mais Vendidos</h1>
+        </div>
+        <section class="highlight-carousel">
+            <div class="carousel-wrapper">
+                <button class="highlight-nav prev">&#10094;</button>
+
+                <div class="highlight-track">
+                    <!-- Card 1 -->
+                    <div class="highlight-card"
+                        style="background-image: url('_img/solo-leveling-wallpaper-blue-purple-variants-v0-atskl0zvspse1.png')">
+                        <div class="overlay">
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="highlight-card"
+                        style="background-image: url('_img/demon-slayer-castelo-infinito-1920x1080.jpg')">
+                        <div class="overlay white">
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="highlight-card" style="background-image: url('_img/one\ piece.jpg')">
+                        <div class="overlay white">
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="highlight-nav next">&#10095;</button>
+            </div>
+
+            <div class="highlight-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+
+        <!--------------------- Adicionados Recentemente ------------------->
+        <h1 class="titulo">Adicionados Recentemente</h1>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="_img/rezero.png">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="_img/Fireforce.png">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="_img/Jujutsu.png">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="_img/SBR.png">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="_img/Noko.png">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-------------- DUAS SECOES --------------------->
+        <div class="duasSecoes">
+            <div class="continueLendo">
+                <div class="titulo">
+                    <h1>Continue Lendo</h1>
+                </div>
+                <div class="obra">
+                    <div class="imagemObra"><img
+                            src="_img/solo-leveling-wallpaper-blue-purple-variants-v0-atskl0zvspse1.png" alt=""></div>
+                    <div class="conteudo-leitura">
+                        <h1>Solo Leveling</h1>
+                        <div class="capitulo">
+                            <div id="numeracao">
+                                <p>Capitulo</p>
+                                <p>180</p>
+                            </div>
+                            <label for="">3 horas atrás</label>
+                        </div>
+                        <div class="capitulo">
+                            <div id="numeracao">
+                                <p>Capitulo</p>
+                                <p>180</p>
+                            </div>
+                            <label for="">4 horas atrás</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="obra">
+                    <div class="imagemObra"><img
+                            src="_img/solo-leveling-wallpaper-blue-purple-variants-v0-atskl0zvspse1.png" alt=""></div>
+                    <div class="conteudo-leitura">
+                        <h1>Solo Leveling</h1>
+                        <div class="capitulo">
+                            <div id="numeracao">
+                                <p>Capitulo</p>
+                                <p>180</p>
+                            </div>
+                            <label for="">3 horas atrás</label>
+                        </div>
+                        <div class="capitulo">
+                            <div id="numeracao">
+                                <p>Capitulo</p>
+                                <p>180</p>
+                            </div>
+                            <label for="">4 horas atrás</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="obra">
+                    <div class="imagemObra"><img
+                            src="_img/solo-leveling-wallpaper-blue-purple-variants-v0-atskl0zvspse1.png" alt=""></div>
+                    <div class="conteudo-leitura">
+                        <h1>Solo Leveling</h1>
+                        <div class="capitulo">
+                            <div id="numeracao">
+                                <p>Capitulo</p>
+                                <p>180</p>
+                            </div>
+                            <label for="">3 horas atrás</label>
+                        </div>
+                        <div class="capitulo">
+                            <div id="numeracao">
+                                <p>Capitulo</p>
+                                <p>180</p>
+                            </div>
+                            <label for="">4 horas atrás</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="destaquesSemana">
+                <div class="titulo">
+                    <h1>Destaques da Semana</h1>
+                </div>
+                <div class="caixasDestaque">
+                    <div class="caixa">
+                        <img src="_img/bleach2.jpg" alt="">
+                    </div>
+                    <div class="caixa">
+                        <img src="_img/bleach2.jpg" alt="">
+                    </div>
+                    <div class="caixa">
+                        <img src="_img/bleach2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="conteudo-footer">
+            <div class="parteEsquerda">
+                <p>
+                    MoriShelf — Sua estante digital de mangás, manhwas e manhuas.
+                </p>
+                <p>
+                    Descubra, leia e explore histórias do outro lado do mundo.
+                </p>
+                <div id="redesSociais">
+                    <p>Siga-Nos :</p>
+                    <img src="_img/facebook.png" alt="">
+                    <img src="_img/twitter.png" alt="">
+                    <img id="insta" src="_img/instagram.png" alt="">
+                </div>
+            </div>
+            <div class="parteDireita">
+                <ul id="esquerda">
+                    <li id="sobreNos"><a href="">Sobre Nós</a></li>
+                    <li id="politicaPrivacidade"><a href="">Política de Privacidade</a></li>
+                    <li id="termosUso"><a href="">Termos de Uso</a></li>
+                </ul>
+                <ul id="direito">
+                    <li id="ajuda/faq"><a href="">Ajuda | FAQ</a></li>
+                    <li id="contato"><a href="">Contato</a></li>
+                    <li id="suporteCliente"><a href="">Suporte ao Cliente</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+
+            spaceBetween: 60,  // AQUI o espaçamento correto 🔥
+
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 220,
+                modifier: 1.2,
+                slideShadows: false,
+            },
+
+            loop: true,
+        });
+    </script>
+
+    <script src="_js/carrosel.js"></script>
+    <script src="_js/script.js"></script>
+</body>
+
+</html>

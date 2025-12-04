@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="_css/sobreNos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img height="200px" src="_img/logo.png" alt=""></a>
+            <div class="pesquisar">
+                <input onclick="pesquisar()" type="text" placeholder="🔍">
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="sobreNos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <div class="sobreNos">
+                <div class="textoSobre">
+                    <p>
+                        Nossa inspiração nasce da palavra japonesa “Mori”, que significa floresta. Assim como em uma
+                        floresta,
+                        cada árvore guarda uma história, e cada trilha pode levar a uma nova descoberta. No
+                        MoriShelf,
+                        acreditamos que as histórias também são assim: diversas, vibrantes e cheias de caminhos que
+                        despertam a
+                        imaginação.
+                    </p>
+                    <p>
+                        Criamos este espaço com o objetivo de oferecer muito mais do que uma simples loja online.
+                        Queremos
+                        que o
+                        MoriShelf seja um refúgio aconchegante para leitores, onde cada página virada é uma nova
+                        experiência,
+                        cada capa é um convite e cada escolha de leitura é feita em um ambiente pensado para ser
+                        leve e
+                        acolhedor.
+                    </p>
+                </div>
+                <div class="side_image">
+                    <img id="side_image" src="_img/side_image_SobreNos.jpg" alt="" width="400px">
+                </div>
+            </div>
+
+
+
+
+            <!------------ SEPARAR SECOES -->
+            <div class="separacao">
+                <h1>ENTRE EM CONTATO</h1>
+                <h6>Deixe sua opinião!</h6>
+            </div>
+
+
+
+
+            <div class="entrarEmContato">
+                <div class="contatar">
+                    <form action="">
+                        <label for="">Nome</label><br>
+                        <input type="text"><br><br>
+                        <label for="">Email</label><br>
+                        <input type="email"><br><br>
+                        <label for="">Mensagem</label><br>
+                        <textarea name="" id="" cols="30" rows="10"
+                            placeholder="Max: 500 caracteres "></textarea><br><br>
+
+                        <button onclick="entreEmContato()">Enviar</button>
+                    </form>
+                    <div class="informacaoContato">
+                        <h1>Nosso Telefone</h1>
+                        <p>(11) 92009-2xxx</p>
+                        <p>(11) 92789-2xxx</p>
+
+                        <h1>Localização</h1>
+                        <p>R. Dom Antônio Cândido de Alvarenga, 353</p>
+                        <p>Centro, Mogi das Cruzes</p>
+                        <p>CEP: 08780-070</p>
+                        <p>Mogi das Cruzes - SP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div id="conteudo-footer">
+            <div class="parteEsquerda">
+                <p>
+                    MoriShelf — Sua estante digital de mangás, manhwas e manhuas.
+                </p>
+                <p>
+                    Descubra, leia e explore histórias do outro lado do mundo.
+                </p>
+                <div id="redesSociais">
+                    <p>Siga-Nos :</p>
+                    <img src="_img/facebook.png" alt="">
+                    <img src="_img/twitter.png" alt="">
+                    <img id="insta" src="_img/instagram.png" alt="">
+                </div>
+            </div>
+            <div class="parteDireita">
+                <ul id="esquerda">
+                    <li id="sobreNos"><a href="">Sobre Nós</a></li>
+                    <li id="politicaPrivacidade"><a href="">Política de Privacidade</a></li>
+                    <li id="termosUso"><a href="">Termos de Uso</a></li>
+                </ul>
+                <ul id="direito">
+                    <li id="ajuda/faq"><a href="">Ajuda | FAQ</a></li>
+                    <li id="contato"><a href="">Contato</a></li>
+                    <li id="suporteCliente"><a href="">Suporte ao Cliente</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="_js/script.js"></script>
+</body>
+
+</html>

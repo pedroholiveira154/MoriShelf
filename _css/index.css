@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    align-items: flex-start;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #63A8A8;
+    height: 8vh;
+    position: relative;
+    z-index: 10;
+}
+
+.preencherTela {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo semi-transparente como fallback para blur */
+    backdrop-filter: none;
+    /* Sem blur por padrão */
+    opacity: 0;
+    /* Invisível por padrão */
+    transition: opacity 0.3s ease-in, backdrop-filter 0.3s ease-in;
+    /* Transição suave para blur e opacity */
+    z-index: 1;
+    /* Baixo, para ficar atrás do menu */
+}
+
+*/ body.menu-open .preencherTela {
+    backdrop-filter: blur(5px);
+    /* Aplica o blur apenas quando ativo */
+    opacity: 1;
+    pointer-events: auto;
+    /* Permite interações se necessário (ex.: fechar ao clicar) */
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    z-index: 10;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+body {
+    overflow-x: hidden;
+    background: #CAE2E2;
+}
+
+.nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 47vw;
+    height: 40vh;
+    background: #38706C;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+}
+
+.nav-list li {
+    margin-left: 0;
+    opacity: 0;
+}
+
+.mobile-menu {
+    display: block;
+}
+
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.pesquisar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pesquisar input{
+    background-color: white;
+    width: 800px;
+    border-radius: 15px;
+    height: 30px;
+    border: none;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+.pesquisar input::placeholder{
+    justify-content: right;
+    align-items: right;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: initial;
+    max-width: 1600px;
+    margin: 50px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+            FOOTER
+============================ */
+footer {
+    background-color: #2F4F4F;
+    color: white;
+    display: flex;
+    bottom: 0%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#conteudo-footer {
+    margin-left: 100px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+}
+
+.parteEsquerda {
+    display: block;
+    flex-direction: column;
+}
+
+.parteDireita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+#esquerda {
+    margin: 0px 300px 20px 500px;
+}
+
+
+#redesSociais {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#redesSociais img {
+    height: 25px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+#redesSociais img#insta {
+    height: 30px;
+    margin: 0px 10px 0px 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+/* ============================
+    CARROSEL MAIS VENDIDOS 
+============================ */
+
+/* Área geral do carrossel */
+.highlight-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Wrapper principal */
+.carousel-wrapper {
+    position: relative;
+    width: 1600px;      /* deixa igual ao tamanho do print */
+    height: 600px;   /* ajuste preciso */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Trilha dos slides */
+.highlight-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* Cada card */
+.highlight-card {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overlay opcional */
+.overlay {
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,0,0.0);
+}
+
+/* Botões laterais */
+.highlight-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    z-index: 10;
+}
+
+.highlight-nav.prev {
+    left: 10px;
+}
+
+.highlight-nav.next {
+    right: 10px;
+}
+
+.highlight-nav:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Dots */
+.highlight-dots {
+    margin-top: 18px;
+    display: flex;
+    gap: 8px;
+}
+
+.highlight-dots .dot {
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+}
+
+.highlight-dots .dot.active {
+    background: #6aa6ff; /* azul suave igual ao print */
+}
+
+
+
+
+
+/* ============================
+    CARROSEL ADICIONADOS RECENTEMENTE 
+============================ */
+
+.mySwiper {
+    width: 100%;
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+.mySwiper .swiper-slide {
+    width: 350px ;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    filter: brightness(0.4);
+    transform: scale(0.8);
+}
+
+
+
+.mySwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+/* SLIDE CENTRAL */
+.mySwiper .swiper-slide-active {
+    transform: scale(1.25);
+    filter: brightness(1);
+}
+
+/* SLIDES DO LADO */
+.mySwiper .swiper-slide-next,
+.mySwiper .swiper-slide-prev {
+    transform: scale(0.95);
+    filter: brightness(0.7);
+}
+
+
+
+
+
+/* ============================
+    DUAS SECOES
+============================ */
+.duasSecoes {
+    display: flex;
+
+}
+
+
+
+
+/* ============================
+    CONTINUE LENDO
+============================ */
+.obra {
+    display: flex;
+    background-color: #63A8A8;
+    min-width: 400px;
+    justify-content: space-between;
+    font-size: 15px;
+    border: 1px solid black;    
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.conteudo-leitura {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.conteudo-leitura h1,
+.capitulo input,
+.capitulo label {
+    color: #1F6666;
+}
+
+.conteudo-leitura h1 {
+    font-size: 25px;
+}
+
+.conteudo-leitura {
+    padding: 20px 10px;
+}
+.capitulo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+#numeracao {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    background-color: #CAE2E2;
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: #1F6666;
+    margin-right: 5px;
+}
+
+.imagemObra img {
+    height: 170px;
+    width: 140px;
+    display: block;
+    object-fit: cover; /* deixa mais bonito */
+}
+
+.continueLendo {
+    margin-right: 100px;
+}
+
+.continueLendo .obra {
+    border: solid black 1px;
+}
+
+.titulo {
+    color: #2F4F4F;
+    margin-bottom: 30px;
+}
+
+
+
+/* ============================
+    DESTAQUES SEMANA 
+============================ */
+.destaquesSemana {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa img {
+    width: 1100px;
+    height: 160px;
+    border-radius: 25px;
+}
+
+.caixa {
+    border-radius: 25px;
+    padding: 1px;
+    margin-bottom: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 4px #D9D9D9,
+        0px 4px 4px #655C5C;
+}
+
+
+
+
